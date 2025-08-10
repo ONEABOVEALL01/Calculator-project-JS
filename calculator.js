@@ -1,4 +1,5 @@
 
+   
 
 let string = "";
 let button = document.querySelectorAll("button");
@@ -8,6 +9,7 @@ Array.from(button).forEach((button) => {
         if(e.target.innerHTML == '='){
            
             try {
+                string = string.replace(/x/g, '*');
                 string = eval(string);
                 document.querySelector('input').value = string;
             } catch (error) {
@@ -35,6 +37,9 @@ Array.from(button).forEach((button) => {
     });
 }
 );
+
+
+
 
 
 
