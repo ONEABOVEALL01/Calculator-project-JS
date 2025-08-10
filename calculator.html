@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+   <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color: rgb(70, 42, 32);
+    font-size: 50px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(144, 225, 252);
+}
+
+.main-body{
+    height: 550px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgb(48, 41, 47);
+}
+
+.button{
+
+height: 70px;
+width: 60px;
+border: 1.5px solid black;
+border-radius: 100px;
+margin: 5px;
+font-size: 25px;
+box-shadow: 5px 5px 10px rgb(9, 9, 9);
+cursor: pointer;
+background-color: rgb(117, 207, 175);
+
+}
+
+.button-1{
+height: 60px;
+width: 140px;
+border: 1.5px solid black;
+border-radius: 100px;
+font-size: 40px;
+margin-top: 10px;
+box-shadow: 5px 5px 10px rgb(37, 33, 33);
+cursor: pointer;
+background-color: rgb(248, 123, 77);
+}
+
+.button-clr{
+    
+height: 70px;
+width: 60px;
+border: 1.5px solid black;
+border-radius: 100px;
+margin: 5px;
+font-size: 25px;
+box-shadow: 5px 5px 10px rgb(37, 33, 33);
+cursor: pointer;
+background-color: rgb(243, 102, 102);
+}
+
+.button-3{
+    
+height: 70px;
+width: 60px;
+border: 1.5px solid black;
+border-radius: 100px;
+margin: 5px;
+font-size: 25px;
+box-shadow: 5px 5px 10px rgb(37, 33, 33);
+cursor: pointer;
+background-color: rgb(244, 243, 159);
+}
+
+#result-in{
+   height: 70px;
+    width: 350px;
+    border: 2px solid black;
+border-radius: 30px;
+margin-bottom: 20px;
+box-shadow: 5px 5px 10px rgb(37, 33, 33);
+}
+
+input{
+    font-size: 35px;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+   </style> 
+
+</head>
+<body>
+   
+<div class="container">
+
+    <h1>Welcome to my Calculator </h1>
+<div class="container">
+
+    <div class="main-body">
+
+        <div class="result">
+<input type="text" id="result-in">
+           
+        </div>
+<div class="row">
+
+    <button class="button-clr">Clr</button>
+
+ <button class="button">DEL</button>
+
+ <button class="button-3">%</button>
+
+ <button class="button-3">/</button>
+
+</div>
+ 
+<div class="row">
+
+ <button class="button">7</button>
+
+ <button class="button">8</button>
+
+ <button class="button">9</button>
+
+ <button class="button-3">x</button>
+
+</div>
+
+
+<div class="row">
+
+ <button class="button">4</button>
+
+ <button class="button">5</button>
+
+ <button class="button">6</button>
+
+ <button class="button-3">-</button>
+
+</div>
+
+
+<div class="row">
+
+ <button class="button">1</button>
+
+ <button class="button">2</button>
+
+ <button class="button">3</button>
+
+ <button class="button-3">+</button>
+
+</div>
+
+
+<div class="row">
+
+ <button class="button">.</button>
+
+ <button class="button">0</button>
+
+ <button class="button-1">=</button>
+
+
+</div>
+
+
+</div>
+
+</div>   
+
+
+<script src="calculator.js"></script>
+</body>
+</html>
