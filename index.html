@@ -44,6 +44,8 @@ h1{
 
 height: 70px;
 width: 60px;
+min-width: 45px;
+max-width: 100px;
 border: 1.5px solid black;
 border-radius: 100px;
 margin: 5px;
@@ -105,6 +107,65 @@ input{
     font-size: 35px;
     margin: 20px;
     padding-left: 20px;
+}
+
+
+/* RESPONSIVE STYLES */
+
+/* Smartphones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .button,
+    .button-clr,
+    .button-3 {
+        height: 30px;
+        width: 50px;
+        font-size: 1rem;
+    }
+    .button-1 {
+        height: 30px;
+        width: 120px;
+        font-size: 1.2rem;
+    }
+    #result-in {
+        font-size: 1.5rem;
+        height: 40px;
+        width: 250px;
+    }
+
+    .main-body{
+        height: 350px;
+    width: 300px
+    }
+   
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .button,
+    .button-clr,
+    .button-3 {
+        height: 55px;
+        width: 55px;
+        font-size: 1.2rem;
+    }
+    .button-1 {
+        height: 55px;
+        width: 130px;
+        font-size: 1.4rem;
+    }
+}
+
+/* Laptops & Large Screens */
+@media (min-width: 769px) {
+    h1 {
+        font-size: 2.5rem;
+    }
 }
 
    </style> 
@@ -194,3 +255,4 @@ input{
 <script src="calculator.js"></script>
 </body>
 </html>
+
